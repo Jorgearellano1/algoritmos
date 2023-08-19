@@ -126,7 +126,11 @@ int main() {
 
     FILE* pipe = popen("gnuplot -persist", "w");
     if (pipe) {
+<<<<<<< HEAD
         fprintf(pipe, "set xlabel 'Number of Random Integers'\n");
+=======
+        fprintf(pipe, "set xlabel 'Number of Random Integers'\n");  
+>>>>>>> 58f1241f94c9bb99f165219244c0e92f2ce9ab09
         fprintf(pipe, "set ylabel 'Tiempo (s)'\n");
         fprintf(pipe, "set title 'Comparación de tiempos: Radix Sort vs Counting Sort'\n");
         fprintf(pipe, "plot 'data.txt' using 1:2 with lines title 'Radix Sort', 'data.txt' using 1:3 with lines title 'Counting Sort'\n");
