@@ -74,7 +74,7 @@ int main() {
 
     FILE* pipe = popen("gnuplot -persist", "w");
     if (pipe) {
-        fprintf(pipe, "set xlabel 'Number of Random Integers'\n");  // Cambiado el nombre del eje x
+        fprintf(pipe, "set xlabel 'Number of Random Integers'\n");  
         fprintf(pipe, "set ylabel 'Tiempo (s)'\n");
         fprintf(pipe, "set title 'Complejidad en tiempo de Radix Sort'\n");
         fprintf(pipe, "plot 'data.txt' using 1:2 with lines title 'Tiempo'\n");
